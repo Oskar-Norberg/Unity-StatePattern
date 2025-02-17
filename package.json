@@ -1,0 +1,20 @@
+{
+  "name": "com.ringo.state-pattern",
+  "version": "1.0.0",
+  "displayName": "State Pattern",
+  "description": "Package for setting up a basic State Pattern.",
+  
+  "unity": "6000.0",
+  "unityRelease": "34f1",
+  
+  "keywords": [
+    "Behaviour Tree"
+  ],
+  
+  "author": {
+    "name": "Oskar Norberg",
+    "url": "https://github.com/Oskar-Norberg"
+  },
+
+  "licensesUrl": "https://www.gnu.org/licenses/gpl-3.0.en.html"
+}
