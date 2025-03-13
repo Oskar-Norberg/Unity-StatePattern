@@ -1,6 +1,6 @@
 {
   "name": "com.ringo.state-pattern",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "State Pattern",
   "description": "Package for setting up a basic State Pattern.",
   
