@@ -36,7 +36,16 @@ namespace StatePattern
         
             Debug.Log("State not found");
         }
+
+        public void AddState<TState>(TState state) where TState : State
         {
+            if (_stateDictionary.ContainsKey(state.GetType()))
+            {
+                Debug.Log("State already exists");
+                return;
+            }
+        
+            _stateDictionary.Add(state.GetType(), state);
         }
 
         protected virtual void UpdateState()
