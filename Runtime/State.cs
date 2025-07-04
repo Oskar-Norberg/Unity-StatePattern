@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace StatePattern
+namespace ringo.StatePattern
 {
     public abstract class State : MonoBehaviour
     {

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace StatePattern
+namespace ringo.StatePattern
 {
     /**
      * <summary>
@@ -58,7 +58,7 @@ namespace StatePattern
             currentState?.FixedUpdateState(Time.fixedDeltaTime);
         }
     
-        private void SwitchState(State state)
+        protected virtual void SwitchState(State state)
         {
             currentState?.ExitState();
             currentState = state;
