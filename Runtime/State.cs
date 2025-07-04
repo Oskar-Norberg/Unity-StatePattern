@@ -11,10 +11,10 @@ namespace ringo.StatePattern
             StateMachine = stateMachine;
         }
 
-        public abstract void ExitState();
+        public virtual void ExitState() {}
 
-        public abstract void UpdateState(float deltaTime);
+        public virtual void UpdateState(float deltaTime) {}
 
-        public abstract void FixedUpdateState(float fixedDeltaTime);
+        public virtual void FixedUpdateState(float fixedDeltaTime) {}
     }
 }

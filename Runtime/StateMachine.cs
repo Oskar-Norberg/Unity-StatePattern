@@ -15,11 +15,10 @@ namespace ringo.StatePattern
         [SerializeField] private State startState;
         [SerializeField] private State[] states;
         
-        private Dictionary<Type, State> _stateDictionary = new();
-    
+        protected Dictionary<Type, State> _stateDictionary = new();
         protected State currentState;
 
-        protected void Awake()
+        protected virtual void Awake()
         {
             InitializeStateDictionary(states);
             
@@ -34,7 +33,7 @@ namespace ringo.StatePattern
                 return;
             }
         
-            Debug.Log("State not found");
+            Debug.LogWarning("State not found");
         }
 
         public void AddState<TState>(TState state) where TState : State
